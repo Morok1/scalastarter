@@ -11,7 +11,7 @@ object Ex1 {
     print(name.toUpperCase)
 
     println("Hello".intersect("World"))
-≠
+
     print(mult(1,2))
 
     val m: BigInt = 12

@@ -14,8 +14,10 @@ object Ex2 {
       in.close();
     }
     testLoop(1)
+    print("Hello".charAt(1))
+    print(fuc(3))
   }
-
+  def fuc(n: Int): Int = if(n <= 0) 1 else n * fuc(n-1)
   def less(m:Int, n:Int): Boolean ={
     return m < n;
   }
@@ -38,7 +40,7 @@ object Ex2 {
 
   }
   def testLoop(m:Int){
-    for (i <- 1 to 10; j <- 1 to 2) print(1,2)
+    for (i <- 1 to 10; j <- 1 to 2) print(i,j)
   }
 
 }

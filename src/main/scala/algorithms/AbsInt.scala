@@ -1,10 +1,5 @@
 package algorithms
 
 object AbsInt {
-  def abs(number : Int): Int = {
-    if(number < 0){
-      return number * -1
-    }
-    return number;
-  }
+  def absMax(elements: List[Int]): Int  = Math.abs(elements.maxBy(x => Math.abs(x)))
 }

@@ -2,9 +2,19 @@ name := "scalastarter"
 
 version := "0.1"
 
-libraryDependencies ++= Seq(
-//  "org.scalanlp" %% "breeze" % "0.11.2",
-//  "org.scalanlp" %% "breeze-natives" % "0.11.2",
-//  "org.slf4j" % "slf4j-simple" % "1.7.5"
+scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
+
+javaOptions ++= Seq("-target", "1.8", "-source", "1.8")
+
+publishMavenStyle := true
+
+
+libraryDependencies ++={
+  Seq(
+    "org.scalatest" %% "scalatest" % "3.0.4" % "test",
+    "org.mockito" % "mockito-all" % "1.10.19" % "test" // mockito for tests
+  )
   addSbtPlugin("com.hanhuy.sbt" % "kotlin-plugin" % "1.0.7")
-)
+}
+
+

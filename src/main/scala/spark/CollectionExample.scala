@@ -9,6 +9,7 @@ object CollectionExample {
     val z = 19
 
 
+  
   Traversable(1,2,3)
   Iterable("x", "y", "z")
   Map("x" -> 10, "y" -> 13, "z" -> 17)
@@ -25,6 +26,10 @@ object CollectionExample {
 
   val list = List(1,2,3) map (_ + 1)
   println(list)
-  }
 
+   val list2 = List(x,y,z).map(x => x*3)
+    print(list2)
+
+
+  }
 }
